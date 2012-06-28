@@ -66,7 +66,7 @@ jes.popUp=function(url,name,w,h,scroll,resize,status,center){
 	return window.open(url,name,"width="+w+",height="+h+",status="+status+",resizable="+resize+",scrollbars="+scroll+center);
 };
 jes.setCookie=function(name, value, expires, path, domain, secure){
-	if(expires)//day·Î ¼³Á¤
+	if(expires)//dayï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	{
 		var d=new Date(); d.setDate(d.getDate()+expires);
 		expires = d.toGMTString();
@@ -253,7 +253,7 @@ jes.parseQuery=function(s){
 	return r;
 };
 jes.addComma=function(s){
-	s+='';
+	var s+='';
 	var re = new RegExp('(-?[0-9]+)([0-9]{3})'); 
 	while(re.test(s)) s = s.replace(re, '$1,$2'); 
 	return s;
