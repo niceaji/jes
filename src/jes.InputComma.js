@@ -2,6 +2,7 @@
 jes.InputComma=function(id){
 	this.input=jes.$(id);
 	this.value='';
+  
 
 	var self=this;
 	jes.addEvent(self.input,'keyup',function(event){ self.check(event) });
