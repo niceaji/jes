@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="shortcut icon" href="jes.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<title>JES</title>
+<link rel="stylesheet" type="text/css" href="common/jes.css">
+<script type="text/javascript" src="common/common.js"></script>
+
+
+
+<script type="text/javascript" src="jes.js" charset="utf-8"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="GNB">
+
+
+<ul class="glossymenu">
+	<li class="current"><a href="index.html"><b>JES</b></a></li>
+</ul>
+
+ 
+</div> 
+
+<div id="CONTENT">
+	<script type="text/javascript">
+function _lm(n)
+{
+	var cookie=jes.getCookie("jeslm");
+
+	if(jes.getStyle(jes.$("leftul"+n),'display')!="none")
+	{
+		
+		jes.$("leftul"+n).style.display="none";
+		cookie=cookie.replace(n+",","");		
+	}
+	else
+	{
+		jes.$("leftul"+n).style.display="block";
+		cookie+=n+","
+		
+	}
+	jes.setCookie("jeslm",cookie,365,"/");
+}	
+function _lmset()
+{
+	var cookie=jes.getCookie("jeslm");
+	for(var i=1; i<=3; i++)
+	{
+		if(cookie.indexOf(i+",")>-1) 
+			jes.$("leftul"+i).style.display="block";
+	}
+}
+</script>
+
+<div id="LEFT">
+	<h2></h2>
+
+	<div class="rb1">
+	<p class="C1"><a href="./">소개</a></p>
+	<p class="C1" style="cursor:pointer" onclick="_lm(1)">공통 함수 (jes.js)</p>
+	<ul class="M1" id="leftul1" >
+		<li><a href="$.html"></a></li>
+		<li><a href="trim.html">jes.trim</a></li>
+		<li><a href="toggle.html">show hide 레이어</a></li>
+		<li><a href="addEvent.html">이벤트 추가</a></li>
+		<li><a href="delEvent.html">이벤트 삭제</a></li>
+		<li><a href="stopEvent.html">이벤트 번짐 방지</a></li>
+		<li><a href="getBrowser.html">Agent 정보</a></li>
+		<li><a href="resizeIframe.html">IFRAME 리사이즈</a></li>
+		<li><a href="rollOver.html">롤오버 이미지</a></li>
+		<li><a href="popUp.html">새창 띄우기</a></li>
+		<li><a href="length.html">문자열 자르기</a></li>
+		<!-- <li><a href="copyText">클립보드 복사</a></li> -->
+		<li><a href="getCookie.html">쿠키값 가져오기</a></li>
+		<li><a href="setCookie.html">쿠키값 저장하기</a></li>
+		<li><a href="embedSWF.html">플래시(swf) 삽입</a></li>
+		<li><a href="embedWMP.html">동영상 삽입</a></li>
+		<li><a href="submit.html">폼 서브밋</a></li>
+		<li><a href="focus.html">폼 포커스</a></li>
+		<li><a href="$F.html">폼값 가져오기</a></li>
+		<li><a href="getStyle.html">스타일값 가져오기</a></li>
+		<li><a href="getPosition.html">위치 가져오기</a></li>
+		<li><a href="html2str.html">html특수문자 변경</a></li>
+		<li><a href="setOpacity.html">투명도 조절</a></li>
+		<li><a href="random.html">랜덤값 구하기</a></li>
+		<li><a href="indexOf.html">Array indexOf()</a></li>
+		<li><a href="resizeImage.html">이미지 리사이즈</a></li>
+		<li><a href="StringBuffer.html">StringBuffer</a></li>
+		<li><a href="parseQuery.html">파라미터 파싱</a></li>
+		<li><a href="getEventWheel.html">휠 이벤트 감지</a></li>
+		<li><a href="addComma.html">금액 표시</a></li>
+	</ul>
+	<p class="C1" style="cursor:pointer" onclick="_lm(2)">확장 함수</p>
+	<ul class="M1" id="leftul2">
+		<li><a href="toolTip.html">툴팁 표시</a></li>
+		<li><a href="xScrolling.html">스크롤링(가로)</a></li>
+		<li><a href="yScrolling.html">스크롤링(세로)</a></li>
+		<li><a href="Rolling.html">롤링</a></li>
+		<li><a href="Tab.html">탭 메뉴</a></li>
+		<li><a href="Select.html">셀렉트 메뉴</a></li>
+		<li><a href="CheckBox.html">체크 박스</a></li>
+		<li><a href="Radio.html">라디오 버튼</a></li>
+		<li><a href="Move.html">슬라이딩 이동</a></li>
+		<li><a href="Drag.html">드래그</a></li>
+		<li><a href="Slider.html">슬라이더</a></li>
+		<li><a href="Sortable.html">Sortable</a></li>
+		<li><a href="Calender.html">달력</a></li>
+		<li><a href="TagChecker.html">Tag 입력 체크</a></li>
+		<li><a href="ByteChecker.html">글자수 제한 입력</a></li>
+		<li><a href="Modal.html">모달 레이어</a></li>
+		<li><a href="InputComma.html">Text폼 금액표시</a></li>
+		<li><a href="AnimateImage.html">이미지 에니메이션</a></li>
+		<li><a href="HomePage.html">홈페이지 설정</a></li>
+		<li><a href="Ajax.html">Ajax</a></li>
+		<li><a href="DynamicScript.html">동적 JS호출</a></li>
+
+	</ul>
+	<p class="C1" style="cursor:pointer" onclick="_lm(3)">응용 예제</p>
+	<ul class="M1" id="leftul3">
+		<!-- <li><a href="ex_sublayer">서브레이어 메뉴</a></li> -->
+		<!-- <li><a href="ex_textlen">글자수 제한 입력</a></li> -->
+		<li><a href="ex_dragdropwin.html">Drag&Drop 윈도우</a></li>
+		<li><a href="ex_inputcal.html">날짜선택 레이어</a></li>
+		<li><a href="ex_toolTip2.html">이미지 툴팁</a></li>
+		<li><a href="ex_slider.html">이미지 리사이즈</a></li>
+	</ul>
+	</div>
+	<script type="text/javascript">_lmset();</script>
+<div class="rb1_b"></div>
+</div>
+
+<!-- 코드실행 하기위한 폼 -->
+<form name="code_form" method="post" action="">
+<input type="hidden" name="code">
+</form> 
+	<div id="CENTER">
+	
+	
+    <h3 class="en">jes.Slider</h3>
+	    <div class="code">
+        <xmp>var drag = new jes.Slider(sArea,sKnob[,oParam])</xmp>
+        <div class="info">슬라이더 기능 구현, jes.Drag.js 필요, 휠스크롤 지원</div>
+            </div>
+	    <h4>인자</h4>
+    <dl class="inja">
+        <dt>sArea</dt>
+        <dd>슬라이드 할 영역 id</dd>
+        <dt>sKnob</dt>
+        <dd>슬라이드 드래그 손잡이 객체 id</dd>
+        <dt>oParam</dt>
+        <dd>주요 파라미터(객체형태로 전달,예제참고)</dd>
+    </dl>
+    <h4>예제</h4>
+
+
+    <div class="btn">
+        
+        <div class="result"><style>
+#area1{
+	border:1px solid black;
+	width:400px;
+	height:20px;
+	position: relative;
+}
+#knob1{
+	position: absolute;
+	top:0;left:0;
+	background-color:red;
+	width:40px;height:20px;
+}
+.arrow {
+	font-size:15px;
+	width:10px;height:22px;
+	cursor:pointer;
+}
+</style>
+
+<span class="arrow" onmousedown="slider.down(this)">◀(좌로 이동)</span><div id="area1"> 
+	<div id="knob1">.</div>
+</div>
+<span class="arrow" onmousedown="slider.up(this)">▶(우로 이동)</span>
+<div id="debug">debug</div>
+
+<script type="text/javascript">
+
+var slider = new jes.Slider("area1","knob1" ,{ 
+	move_value:10, //스크롤휠 돌렸을경우 움직임
+	onSlide:function(){ jes.$("debug").innerHTML="onSlide "+this.value;  } ,
+	onChange:function(){ jes.$("debug").innerHTML="onChange "+this.value;  } 
+});
+
+</script>
+
+<hr>
+<style>
+#area2{
+	background-color:#ccc;
+	width:20px;height:200px;
+	position: relative;
+}
+#knob2{
+	position: absolute;
+	top:0;left:0;
+	background-color:#000;
+	width:20px;height:40px;
+}
+</style>
+<div id="area2"> 
+	<div id="knob2">.</div>
+</div>
+<div id="debug2">debug</div>
+<script type="text/javascript">
+new jes.Slider("area2","knob2" ,{
+	mode:2,
+	max_value:230,
+	value:20,
+	onSlide:function(){ jes.$("debug2").innerHTML="onSlide "+this.value;  } ,
+	onChange:function(){ jes.$("debug2").innerHTML="onChange "+this.value;  } 
+});
+</script>
+
+<hr>
+<style>
+
+
+#txt{
+	width:200px;
+	height:150px;
+	overflow:hidden;
+	border:1px solid #000;
+	float:left;
+	color:#565656;
+}
+#area3{
+	float:left;
+	background-color:#ccc;
+	width:10px;height:150px;
+	position: relative;
+}
+#knob3{
+	position: absolute;
+	top:0;left:0;
+	background-color:#000;
+	width:10px;height:20px;
+}
+
+</style>
+
+
+<div id="txt">
+스크롤 내려주세요 ↓<br>
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>
+11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>
+스크롤 올려주세요 ↑<br>
+</div>
+<div id="area3">
+	<div id="knob3">.</div>
+</div>
+
+<div style="clear:both"></div>
+
+<script type="text/javascript">
+function setScroll() //사용자함수
+{
+	var top = Math.floor( this.value * (jes.$("txt").scrollHeight-jes.$("txt").offsetHeight) / this.max_value);
+	jes.$("txt").scrollTop =top;
+}
+
+new jes.Slider("area3","knob3" ,{
+	mode:2,
+	wheel_area:'txt',//마우스휠동작 감지영역
+	onSlide:function(){  setScroll.call(this) },
+	onChange:function(){ setScroll.call(this) } 
+});
+</script>
+
+<hr>
+<a href="js_help.php?f=ex_slider" style="color:red">이미지 리사이즈 예제보기</a></div>
+	<div id="div_source">
+    <h5>소스</h5>
+        <xmp class="source" id="xmp1"><style>
+#area1{
+	border:1px solid black;
+	width:400px;
+	height:20px;
+	position: relative;
+}
+#knob1{
+	position: absolute;
+	top:0;left:0;
+	background-color:red;
+	width:40px;height:20px;
+}
+.arrow {
+	font-size:15px;
+	width:10px;height:22px;
+	cursor:pointer;
+}
+</style>
+
+<span class="arrow" onmousedown="slider.down(this)">◀(좌로 이동)</span><div id="area1"> 
+	<div id="knob1">.</div>
+</div>
+<span class="arrow" onmousedown="slider.up(this)">▶(우로 이동)</span>
+<div id="debug">debug</div>
+
+<script type="text/javascript">
+
+var slider = new jes.Slider("area1","knob1" ,{ 
+	move_value:10, //스크롤휠 돌렸을경우 움직임
+	onSlide:function(){ jes.$("debug").innerHTML="onSlide "+this.value;  } ,
+	onChange:function(){ jes.$("debug").innerHTML="onChange "+this.value;  } 
+});
+
+</script>
+
+<hr>
+<style>
+#area2{
+	background-color:#ccc;
+	width:20px;height:200px;
+	position: relative;
+}
+#knob2{
+	position: absolute;
+	top:0;left:0;
+	background-color:#000;
+	width:20px;height:40px;
+}
+</style>
+<div id="area2"> 
+	<div id="knob2">.</div>
+</div>
+<div id="debug2">debug</div>
+<script type="text/javascript">
+new jes.Slider("area2","knob2" ,{
+	mode:2,
+	max_value:230,
+	value:20,
+	onSlide:function(){ jes.$("debug2").innerHTML="onSlide "+this.value;  } ,
+	onChange:function(){ jes.$("debug2").innerHTML="onChange "+this.value;  } 
+});
+</script>
+
+<hr>
+<style>
+
+
+#txt{
+	width:200px;
+	height:150px;
+	overflow:hidden;
+	border:1px solid #000;
+	float:left;
+	color:#565656;
+}
+#area3{
+	float:left;
+	background-color:#ccc;
+	width:10px;height:150px;
+	position: relative;
+}
+#knob3{
+	position: absolute;
+	top:0;left:0;
+	background-color:#000;
+	width:10px;height:20px;
+}
+
+</style>
+
+
+<div id="txt">
+스크롤 내려주세요 ↓<br>
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>
+11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>
+스크롤 올려주세요 ↑<br>
+</div>
+<div id="area3">
+	<div id="knob3">.</div>
+</div>
+
+<div style="clear:both"></div>
+
+<script type="text/javascript">
+function setScroll() //사용자함수
+{
+	var top = Math.floor( this.value * (jes.$("txt").scrollHeight-jes.$("txt").offsetHeight) / this.max_value);
+	jes.$("txt").scrollTop =top;
+}
+
+new jes.Slider("area3","knob3" ,{
+	mode:2,
+	wheel_area:'txt',//마우스휠동작 감지영역
+	onSlide:function(){  setScroll.call(this) },
+	onChange:function(){ setScroll.call(this) } 
+});
+</script>
+
+<hr>
+<a href="js_help.php?f=ex_slider" style="color:red">이미지 리사이즈 예제보기</a></xmp>
+	</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

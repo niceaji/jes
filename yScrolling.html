@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="shortcut icon" href="jes.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<title>JES</title>
+<link rel="stylesheet" type="text/css" href="common/jes.css">
+<script type="text/javascript" src="common/common.js"></script>
+
+
+
+<script type="text/javascript" src="jes.js" charset="utf-8"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="GNB">
+
+
+<ul class="glossymenu">
+	<li class="current"><a href="index.html"><b>JES</b></a></li>
+</ul>
+
+ 
+</div> 
+
+<div id="CONTENT">
+	<script type="text/javascript">
+function _lm(n)
+{
+	var cookie=jes.getCookie("jeslm");
+
+	if(jes.getStyle(jes.$("leftul"+n),'display')!="none")
+	{
+		
+		jes.$("leftul"+n).style.display="none";
+		cookie=cookie.replace(n+",","");		
+	}
+	else
+	{
+		jes.$("leftul"+n).style.display="block";
+		cookie+=n+","
+		
+	}
+	jes.setCookie("jeslm",cookie,365,"/");
+}	
+function _lmset()
+{
+	var cookie=jes.getCookie("jeslm");
+	for(var i=1; i<=3; i++)
+	{
+		if(cookie.indexOf(i+",")>-1) 
+			jes.$("leftul"+i).style.display="block";
+	}
+}
+</script>
+
+<div id="LEFT">
+	<h2></h2>
+
+	<div class="rb1">
+	<p class="C1"><a href="./">소개</a></p>
+	<p class="C1" style="cursor:pointer" onclick="_lm(1)">공통 함수 (jes.js)</p>
+	<ul class="M1" id="leftul1" >
+		<li><a href="$.html"></a></li>
+		<li><a href="trim.html">jes.trim</a></li>
+		<li><a href="toggle.html">show hide 레이어</a></li>
+		<li><a href="addEvent.html">이벤트 추가</a></li>
+		<li><a href="delEvent.html">이벤트 삭제</a></li>
+		<li><a href="stopEvent.html">이벤트 번짐 방지</a></li>
+		<li><a href="getBrowser.html">Agent 정보</a></li>
+		<li><a href="resizeIframe.html">IFRAME 리사이즈</a></li>
+		<li><a href="rollOver.html">롤오버 이미지</a></li>
+		<li><a href="popUp.html">새창 띄우기</a></li>
+		<li><a href="length.html">문자열 자르기</a></li>
+		<!-- <li><a href="copyText">클립보드 복사</a></li> -->
+		<li><a href="getCookie.html">쿠키값 가져오기</a></li>
+		<li><a href="setCookie.html">쿠키값 저장하기</a></li>
+		<li><a href="embedSWF.html">플래시(swf) 삽입</a></li>
+		<li><a href="embedWMP.html">동영상 삽입</a></li>
+		<li><a href="submit.html">폼 서브밋</a></li>
+		<li><a href="focus.html">폼 포커스</a></li>
+		<li><a href="$F.html">폼값 가져오기</a></li>
+		<li><a href="getStyle.html">스타일값 가져오기</a></li>
+		<li><a href="getPosition.html">위치 가져오기</a></li>
+		<li><a href="html2str.html">html특수문자 변경</a></li>
+		<li><a href="setOpacity.html">투명도 조절</a></li>
+		<li><a href="random.html">랜덤값 구하기</a></li>
+		<li><a href="indexOf.html">Array indexOf()</a></li>
+		<li><a href="resizeImage.html">이미지 리사이즈</a></li>
+		<li><a href="StringBuffer.html">StringBuffer</a></li>
+		<li><a href="parseQuery.html">파라미터 파싱</a></li>
+		<li><a href="getEventWheel.html">휠 이벤트 감지</a></li>
+		<li><a href="addComma.html">금액 표시</a></li>
+	</ul>
+	<p class="C1" style="cursor:pointer" onclick="_lm(2)">확장 함수</p>
+	<ul class="M1" id="leftul2">
+		<li><a href="toolTip.html">툴팁 표시</a></li>
+		<li><a href="xScrolling.html">스크롤링(가로)</a></li>
+		<li><a href="yScrolling.html">스크롤링(세로)</a></li>
+		<li><a href="Rolling.html">롤링</a></li>
+		<li><a href="Tab.html">탭 메뉴</a></li>
+		<li><a href="Select.html">셀렉트 메뉴</a></li>
+		<li><a href="CheckBox.html">체크 박스</a></li>
+		<li><a href="Radio.html">라디오 버튼</a></li>
+		<li><a href="Move.html">슬라이딩 이동</a></li>
+		<li><a href="Drag.html">드래그</a></li>
+		<li><a href="Slider.html">슬라이더</a></li>
+		<li><a href="Sortable.html">Sortable</a></li>
+		<li><a href="Calender.html">달력</a></li>
+		<li><a href="TagChecker.html">Tag 입력 체크</a></li>
+		<li><a href="ByteChecker.html">글자수 제한 입력</a></li>
+		<li><a href="Modal.html">모달 레이어</a></li>
+		<li><a href="InputComma.html">Text폼 금액표시</a></li>
+		<li><a href="AnimateImage.html">이미지 에니메이션</a></li>
+		<li><a href="HomePage.html">홈페이지 설정</a></li>
+		<li><a href="Ajax.html">Ajax</a></li>
+		<li><a href="DynamicScript.html">동적 JS호출</a></li>
+
+	</ul>
+	<p class="C1" style="cursor:pointer" onclick="_lm(3)">응용 예제</p>
+	<ul class="M1" id="leftul3">
+		<!-- <li><a href="ex_sublayer">서브레이어 메뉴</a></li> -->
+		<!-- <li><a href="ex_textlen">글자수 제한 입력</a></li> -->
+		<li><a href="ex_dragdropwin.html">Drag&Drop 윈도우</a></li>
+		<li><a href="ex_inputcal.html">날짜선택 레이어</a></li>
+		<li><a href="ex_toolTip2.html">이미지 툴팁</a></li>
+		<li><a href="ex_slider.html">이미지 리사이즈</a></li>
+	</ul>
+	</div>
+	<script type="text/javascript">_lmset();</script>
+<div class="rb1_b"></div>
+</div>
+
+<!-- 코드실행 하기위한 폼 -->
+<form name="code_form" method="post" action="">
+<input type="hidden" name="code">
+</form> 
+	<div id="CENTER">
+	
+	
+
+
+    <h3 class="en">jes.yScrolling</h3>
+	    <div class="code">
+        <xmp>var oScroll = new jes.yScrolling(sCid, iMillisec1,iMillisec2, iSpeed[,iHeight])</xmp>
+        <div class="info">세로 스크롤링 생성 (아래에서 위로)</div>
+            </div>
+	    <h4>인자</h4>
+    <dl class="inja">
+        <dt>sCid</dt>
+        <dd>스크롤링할 내용이 담겨있는 객체 id</dd>
+        <dt>iMillisec1</dt>
+        <dd>처음 시작 텀 (밀리초:1000=1초)</dd>
+        <dt>iMillisec2</dt>
+        <dd>실행 텀 (밀리초), 클수록 느려짐</dd>
+        <dt>iSpeed</dt>
+        <dd>한번에 움직일 px, 클수록 빨라짐</dd>
+        <dt>iHeight</dt>
+        <dd>값을 지정할경우 iHeight값만큼 이동후 iMillisec2만큼 멈추고 다시 반복</dd>
+    </dl>
+    <h4>예제</h4>
+
+
+    <div class="btn">
+        
+        <div class="result"><!-- 기본 세로 스크롤 -->
+<style type="text/css">
+.U li {margin-left:10px; height:19px; padding:4px 8px 0; background:#fff url("img/ico_dot1.gif") no-repeat 0 10px;
+border-bottom:1px solid #e1e1e1;}
+
+#yscroll2   {border:2px solid #CAD6EE; height:23px; overflow:hidden;}
+#yscroll1, #yscroll3, #yscroll4 {border:2px solid #CAD6EE; height:95px; overflow:hidden;}
+</style>
+
+    <h4>기본 리스트</h4>
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+<br /><br />
+
+<!-- ======================================================================== -->
+<h4>new jes.yScrolling("yscroll1",1000,1,1);</h4>
+<div id="yscroll1" style="">
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    new jes.yScrolling("yscroll1",1000,1,1);
+</script>
+<br /><br />
+
+<!-- ======================================================================== -->
+<h4>new jes.yScrolling("yscroll2",1000,1,1,24);</h4>
+<div id="yscroll2">
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    new jes.yScrolling("yscroll2",1000,1,1,24);
+</script>
+<br /><br />
+
+<!-- ======================================================================== -->
+<h4>new jes.yScrolling("yscroll3",1000,1,1,24*2);</h4>
+<div id="yscroll3">
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    new jes.yScrolling("yscroll3",1000,1,1,24*2);
+</script>
+<br /><br />
+
+<!-- ======================================================================== -->
+<h4>new jes.yScrolling("yscroll4",1000,1000,24);</h4>
+<div id="yscroll4">
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    new jes.yScrolling("yscroll4",1000,1000,24);
+</script>
+
+<br />
+</div>
+	<div id="div_source">
+    <h5>소스</h5>
+        <xmp class="source" id="xmp1"><!-- 기본 세로 스크롤 -->
+<style type="text/css">
+.U li {margin-left:10px; height:19px; padding:4px 8px 0; background:#fff url("img/ico_dot1.gif") no-repeat 0 10px;
+border-bottom:1px solid #e1e1e1;}
+
+#yscroll2   {border:2px solid #CAD6EE; height:23px; overflow:hidden;}
+#yscroll1, #yscroll3, #yscroll4 {border:2px solid #CAD6EE; height:95px; overflow:hidden;}
+</style>
+
+    <h4>기본 리스트</h4>
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+<br /><br />
+
+<!-- ======================================================================== -->
+<h4>new jes.yScrolling("yscroll1",1000,1,1);</h4>
+<div id="yscroll1" style="">
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    new jes.yScrolling("yscroll1",1000,1,1);
+</script>
+<br /><br />
+
+<!-- ======================================================================== -->
+<h4>new jes.yScrolling("yscroll2",1000,1,1,24);</h4>
+<div id="yscroll2">
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    new jes.yScrolling("yscroll2",1000,1,1,24);
+</script>
+<br /><br />
+
+<!-- ======================================================================== -->
+<h4>new jes.yScrolling("yscroll3",1000,1,1,24*2);</h4>
+<div id="yscroll3">
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    new jes.yScrolling("yscroll3",1000,1,1,24*2);
+</script>
+<br /><br />
+
+<!-- ======================================================================== -->
+<h4>new jes.yScrolling("yscroll4",1000,1000,24);</h4>
+<div id="yscroll4">
+    <ul class="U">
+        <li>박지성 빠진 맨유 '솔샤르 선발출전'</li>
+        <li>설기현, 계속되는 '2군 경기' 출전</li>
+        <li>퍼거슨 감독, 박지성 부상 공식 확인</li>
+        <li>이탈리아 의회 ‘반 훌리건법’ 통과 시켜</li>
+        <li>'부상 복귀' 베컴, 레알서 '유종의 미' 거둘까?</li>
+        <li>'개구리 점프' 블랑코, 미MLS 시카고 입단</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    new jes.yScrolling("yscroll4",1000,1000,24);
+</script>
+
+<br />
+</xmp>
+	</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

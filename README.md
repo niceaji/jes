@@ -22,6 +22,6 @@ JES는 제주에 위치한 Daum 미디어오피스 에서 만들어진 자바스
 
 * [예제사이트][1]로 이동
 
-[1]:http://uix.kr/jes
+[1]:http://niceaji.github.com/jes
 [2]:http://daum.net/
 

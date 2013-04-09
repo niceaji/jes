@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="shortcut icon" href="jes.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<title>JES</title>
+<link rel="stylesheet" type="text/css" href="common/jes.css">
+<script type="text/javascript" src="common/common.js"></script>
+
+
+
+<script type="text/javascript" src="jes.js" charset="utf-8"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="GNB">
+
+
+<ul class="glossymenu">
+	<li class="current"><a href="index.html"><b>JES</b></a></li>
+</ul>
+
+ 
+</div> 
+
+<div id="CONTENT">
+	<script type="text/javascript">
+function _lm(n)
+{
+	var cookie=jes.getCookie("jeslm");
+
+	if(jes.getStyle(jes.$("leftul"+n),'display')!="none")
+	{
+		
+		jes.$("leftul"+n).style.display="none";
+		cookie=cookie.replace(n+",","");		
+	}
+	else
+	{
+		jes.$("leftul"+n).style.display="block";
+		cookie+=n+","
+		
+	}
+	jes.setCookie("jeslm",cookie,365,"/");
+}	
+function _lmset()
+{
+	var cookie=jes.getCookie("jeslm");
+	for(var i=1; i<=3; i++)
+	{
+		if(cookie.indexOf(i+",")>-1) 
+			jes.$("leftul"+i).style.display="block";
+	}
+}
+</script>
+
+<div id="LEFT">
+	<h2></h2>
+
+	<div class="rb1">
+	<p class="C1"><a href="./">소개</a></p>
+	<p class="C1" style="cursor:pointer" onclick="_lm(1)">공통 함수 (jes.js)</p>
+	<ul class="M1" id="leftul1" >
+		<li><a href="$.html"></a></li>
+		<li><a href="trim.html">jes.trim</a></li>
+		<li><a href="toggle.html">show hide 레이어</a></li>
+		<li><a href="addEvent.html">이벤트 추가</a></li>
+		<li><a href="delEvent.html">이벤트 삭제</a></li>
+		<li><a href="stopEvent.html">이벤트 번짐 방지</a></li>
+		<li><a href="getBrowser.html">Agent 정보</a></li>
+		<li><a href="resizeIframe.html">IFRAME 리사이즈</a></li>
+		<li><a href="rollOver.html">롤오버 이미지</a></li>
+		<li><a href="popUp.html">새창 띄우기</a></li>
+		<li><a href="length.html">문자열 자르기</a></li>
+		<!-- <li><a href="copyText">클립보드 복사</a></li> -->
+		<li><a href="getCookie.html">쿠키값 가져오기</a></li>
+		<li><a href="setCookie.html">쿠키값 저장하기</a></li>
+		<li><a href="embedSWF.html">플래시(swf) 삽입</a></li>
+		<li><a href="embedWMP.html">동영상 삽입</a></li>
+		<li><a href="submit.html">폼 서브밋</a></li>
+		<li><a href="focus.html">폼 포커스</a></li>
+		<li><a href="$F.html">폼값 가져오기</a></li>
+		<li><a href="getStyle.html">스타일값 가져오기</a></li>
+		<li><a href="getPosition.html">위치 가져오기</a></li>
+		<li><a href="html2str.html">html특수문자 변경</a></li>
+		<li><a href="setOpacity.html">투명도 조절</a></li>
+		<li><a href="random.html">랜덤값 구하기</a></li>
+		<li><a href="indexOf.html">Array indexOf()</a></li>
+		<li><a href="resizeImage.html">이미지 리사이즈</a></li>
+		<li><a href="StringBuffer.html">StringBuffer</a></li>
+		<li><a href="parseQuery.html">파라미터 파싱</a></li>
+		<li><a href="getEventWheel.html">휠 이벤트 감지</a></li>
+		<li><a href="addComma.html">금액 표시</a></li>
+	</ul>
+	<p class="C1" style="cursor:pointer" onclick="_lm(2)">확장 함수</p>
+	<ul class="M1" id="leftul2">
+		<li><a href="toolTip.html">툴팁 표시</a></li>
+		<li><a href="xScrolling.html">스크롤링(가로)</a></li>
+		<li><a href="yScrolling.html">스크롤링(세로)</a></li>
+		<li><a href="Rolling.html">롤링</a></li>
+		<li><a href="Tab.html">탭 메뉴</a></li>
+		<li><a href="Select.html">셀렉트 메뉴</a></li>
+		<li><a href="CheckBox.html">체크 박스</a></li>
+		<li><a href="Radio.html">라디오 버튼</a></li>
+		<li><a href="Move.html">슬라이딩 이동</a></li>
+		<li><a href="Drag.html">드래그</a></li>
+		<li><a href="Slider.html">슬라이더</a></li>
+		<li><a href="Sortable.html">Sortable</a></li>
+		<li><a href="Calender.html">달력</a></li>
+		<li><a href="TagChecker.html">Tag 입력 체크</a></li>
+		<li><a href="ByteChecker.html">글자수 제한 입력</a></li>
+		<li><a href="Modal.html">모달 레이어</a></li>
+		<li><a href="InputComma.html">Text폼 금액표시</a></li>
+		<li><a href="AnimateImage.html">이미지 에니메이션</a></li>
+		<li><a href="HomePage.html">홈페이지 설정</a></li>
+		<li><a href="Ajax.html">Ajax</a></li>
+		<li><a href="DynamicScript.html">동적 JS호출</a></li>
+
+	</ul>
+	<p class="C1" style="cursor:pointer" onclick="_lm(3)">응용 예제</p>
+	<ul class="M1" id="leftul3">
+		<!-- <li><a href="ex_sublayer">서브레이어 메뉴</a></li> -->
+		<!-- <li><a href="ex_textlen">글자수 제한 입력</a></li> -->
+		<li><a href="ex_dragdropwin.html">Drag&Drop 윈도우</a></li>
+		<li><a href="ex_inputcal.html">날짜선택 레이어</a></li>
+		<li><a href="ex_toolTip2.html">이미지 툴팁</a></li>
+		<li><a href="ex_slider.html">이미지 리사이즈</a></li>
+	</ul>
+	</div>
+	<script type="text/javascript">_lmset();</script>
+<div class="rb1_b"></div>
+</div>
+
+<!-- 코드실행 하기위한 폼 -->
+<form name="code_form" method="post" action="">
+<input type="hidden" name="code">
+</form> 
+	<div id="CENTER">
+	
+	
+    <h3 class="en">jes.Drag</h3>
+	    <div class="code">
+        <xmp>var drag = new jes.Drag(sId[,oParam])</xmp>
+        <div class="info">객체를 드래그 가능하게 설정</div>
+            </div>
+	    <h4>인자</h4>
+    <dl class="inja">
+        <dt>sId</dt>
+        <dd>drag 할 객체 id</dd>
+        <dt>oParam</dt>
+        <dd>주요 파라미터(객체형태로 전달,예제참고)</dd>
+    </dl>
+    <h4>예제</h4>
+
+
+    <div class="btn">
+        
+        <div class="result"><style type="text/css">
+#div_drag{
+	position:absolute;
+	width:150px;height:100px;
+	background:gray;
+	top:600px;left:600px;	
+}
+#div_drag2{
+	position:absolute;
+	width:100px;height:50px;
+	background:#efefef;
+	top:800px;left:600px;	
+}
+#div_drag3{
+	position:absolute;
+	width:80px;height:50px;
+	background:#efefef;
+	top:800px;left:800px;	
+}
+#div_move{
+	position:absolute;
+	width:200px;height:70px;
+	background-color:#cad6ee;
+	top:20px;left:0;	
+}
+#div_handle {
+	border:1px solid red;
+	width:100px;
+}
+#div_box {
+	border:1px solid #000;
+	background-color:#fff;
+	width:400px;height:300px;
+}
+</style>
+
+
+<div id="div_box">
+	박스안에서만 드래그 가능
+	<div id="div_move">
+		<div id="div_handle">드래그손잡이</div>
+		내용 내용 <br />
+		내용 내용 <br />
+	</div>
+</div>
+<div id="debug">&nbsp;</div>
+
+<div id="div_drag">마음대로 드래그</div>
+<div id="div_drag2">상,하로만 드래그</div>
+<div id="div_drag3">limit 속성</div>
+
+<script type="text/javascript">
+new jes.Drag("div_drag" );
+new jes.Drag("div_move", {
+	handle:"div_handle",
+	container:"div_box",
+	onStart:function() { jes.$('debug').innerHTML='드래그시작';  jes.setOpacity(this,50) },
+	onDrag:function() { jes.$('debug').innerHTML=this.style.left; },
+	onStop:function() { jes.$('debug').innerHTML='드래그끝';  jes.setOpacity(this,100) }
+});
+new jes.Drag("div_drag2" , {move_mode:2});
+new jes.Drag("div_drag3" , { limit_top:700,limit_bottom:1000,limit_left:800,limit_right:850 });
+
+</script>
+</div>
+	<div id="div_source">
+    <h5>소스</h5>
+        <xmp class="source" id="xmp1"><style type="text/css">
+#div_drag{
+	position:absolute;
+	width:150px;height:100px;
+	background:gray;
+	top:600px;left:600px;	
+}
+#div_drag2{
+	position:absolute;
+	width:100px;height:50px;
+	background:#efefef;
+	top:800px;left:600px;	
+}
+#div_drag3{
+	position:absolute;
+	width:80px;height:50px;
+	background:#efefef;
+	top:800px;left:800px;	
+}
+#div_move{
+	position:absolute;
+	width:200px;height:70px;
+	background-color:#cad6ee;
+	top:20px;left:0;	
+}
+#div_handle {
+	border:1px solid red;
+	width:100px;
+}
+#div_box {
+	border:1px solid #000;
+	background-color:#fff;
+	width:400px;height:300px;
+}
+</style>
+
+
+<div id="div_box">
+	박스안에서만 드래그 가능
+	<div id="div_move">
+		<div id="div_handle">드래그손잡이</div>
+		내용 내용 <br />
+		내용 내용 <br />
+	</div>
+</div>
+<div id="debug">&nbsp;</div>
+
+<div id="div_drag">마음대로 드래그</div>
+<div id="div_drag2">상,하로만 드래그</div>
+<div id="div_drag3">limit 속성</div>
+
+<script type="text/javascript">
+new jes.Drag("div_drag" );
+new jes.Drag("div_move", {
+	handle:"div_handle",
+	container:"div_box",
+	onStart:function() { jes.$('debug').innerHTML='드래그시작';  jes.setOpacity(this,50) },
+	onDrag:function() { jes.$('debug').innerHTML=this.style.left; },
+	onStop:function() { jes.$('debug').innerHTML='드래그끝';  jes.setOpacity(this,100) }
+});
+new jes.Drag("div_drag2" , {move_mode:2});
+new jes.Drag("div_drag3" , { limit_top:700,limit_bottom:1000,limit_left:800,limit_right:850 });
+
+</script>
+</xmp>
+	</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>
